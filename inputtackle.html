@@ -9,11 +9,11 @@
 </head>
 
 <body>
-    <input id="his" type="text" placeholder="content" onkeyup="mybtn()">
+    <input id="his" type="text" placeholder="content" onkeyup="searchhandler()">
 </body>
 <script>
 
-    function mybtn() {
+    function searchhandler() {
         let content = document.getElementById("his").value;
         localStorage.setItem('content', content)
     }
